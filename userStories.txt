@@ -1,0 +1,315 @@
+User Stories:
+
+Baseline story point estimate value of one = 1 hr of development time for a single developer.
+
+#1) As a user I can provide the 2D modeler an input file with descriptions of shapes and the modeler should be able to read this file and render the appropriate shapes.(Reed)
+
+  a) Description:
+        A user can provide a shape input file that can specify the type and property of the shape/text . Also each shape will have a unique ID.
+
+  b) Tasks:
+	As a satisfied user I can provide any of these options for type:  line, polyline, polygon, rectangle, ellipse, text.
+	As a satisfied user I can provide any of these options for shape property:  shape dimensions, pen color, pen width,
+        pen style, pen cap style, pen join style, brush color, brush shape.
+	As a satisfied user I can provide any of these options for text property:  shape dimensions, text string, text color, 
+	text alignment, text point size, text font family,text font style, text font weight.
+
+  c) Tests:
+	Verify that the given shape type and property are valid.
+	Verify that the given text properties are valid.
+       
+  d) Assignee:N/A
+       
+  e) Estimation: 10
+
+  f) Priority: 2
+ 
+  g) Done:
+	User is able to provide the application with a variety of shapes in the input file and the program interprets all the information correctly and is able to render the 
+	correct shapes. Any changes to the input file will update the rendering.
+
+	
+#2)  As an administrator, I can view the changes made to shapes, including text, in the rendering area. (Ryan)
+
+  a) Description:
+       The program should be able to move shapes, including text, being rendered. This is 
+       accomplished via a move shape form. (see tasks)
+
+  b) Tasks:
+       As an administrator, I can view moved shapes being rendered in the rendering area
+       As an administrator, I can view moved text being rendered in the rendering area 
+
+  c) Tests:
+       Verify that an administrator can view moved shapes being rendered in the rendering area
+       Verify that an administrator can view moved text being rendered in the rendering area
+
+  d) Assignee:
+       Ryan, implement front end UI and code behind logic for administrator access
+       Jake, test administer access fix
+
+  e) Estimation: 3
+
+  f) Priority: 3
+
+  g) Done:
+       Administrator can view moved shapes being rendered in the rendering area
+       Administrator can view moved text being rendered in the rendering area
+       All task, test conditions satisfied
+
+
+#3) As a user, I can see shapes, from least to greatest, with its area, type, and id. (Sophia)
+      
+  a)  Description:
+	A site user can ask for a shape listing report of only shapes.
+	How much of the list the user wants to see is dependent on the user 
+	type.
+	If the user does not want to see the whole list, then they must type how much 
+	they want to see.
+
+  b)  Tasks:
+	As a producer, I can provide the user with a list of requested shapes 
+	and provides its area, id, and type.
+	As a user, I can request a certain list of shapes I wish to see.
+
+  c)  Tests:
+	Verify that the shapes are assigned the correctly calculated  area
+	Verify that the shapes are applied to the correct shapes and id.
+	Verify that the user receives the correct list of shapes
+
+  d)  Assignee:
+	Sophia, assign the shapes to its correct calculated 
+	area, id, and type.
+
+  e)  Estimation: 18
+
+  f)  Priority: 9
+
+  g)  Done:
+	User is able to request a certain list of only shapes with its 
+	correct area, type, and id. 
+	The user will receive the list of shapes in numerical order.
+	If user does not want the whole list of shapes, then the 
+	user must request a new list of shapes.
+
+
+#4) As a user, I want to view a list of shapes sorted by perimeter (Dan)
+
+ a)Description:
+	A user will be able to produce a list of only shapes with a perimeter sorted by its perimeter
+	The list should be able to be sorted from least to greatest and greatest to least
+
+ b)Tasks:
+	As a user, I can produce a list of shapes from least to greatest (by perimeter)
+	As a user, I can produce a list of shapes from greatest to least (by perimeter)
+	As a user, I will be able to view the type and id of the shape in the list
+	As a user, I will be able to produce the list at any time
+
+ c)Tests:
+	Verify that the list only contains shapes that have a perimeter
+	Verify that the list is in order from least to greatest
+	verify that the list is in order from greatest to least
+	verify that the list displays the shapes id and type on the list
+
+ d)Assignee:
+	???, implement a sorting algorithm for the list
+	???, implement a menu option to produce the list
+
+ e)Estimation: 12
+
+ f)Priority: 10
+
+ g)Done:
+	User is able to produce the list at anytime (menu option)
+	The user will be given the option on which way to sort the list
+	Including the perimeter the shapes on the list will include its id and type
+	All task, test conditions satisfied
+
+
+#5) As a user, I want to enter a testimonial so that I may provide feedback on my experience with the software.(Craig)
+
+  a) Description:
+	If a user of the software desires to comment on/critique the product,
+     they may due so by providing a written testimony of their experience and submit it for review. 
+	The testimonials will be persistent between executions.
+	Will solicit the user for additional testimonials.
+
+  b) Tasks:
+	As a satisfied customer, I want to enter a testimonial so that I may provide feedback on my experience with the software.
+	As a guest user, I want to also enter a testimonial so that I may also provide feedback on my experience.
+
+  c) Tests:
+	Verify that the customer would like to provide feedback on the software.
+	Verify the user’s information as to correlate the testimonial to the person submitting.
+  d) Assignee:
+	N/A
+  e) Estimation: 25
+
+  f) Priority: 2
+
+  g) Done:
+	User is prompted to provide feedback on the software whenever appropriate [refer to Tests].
+	User can submit a personal feedback form that includes their information and a written testimony about their experience.
+	All task, test conditions satisfied
+
+
+#6) As a user, I can contact the owner or those who manage the software. (Alan)
+	
+  a) Description:
+	i) A program user should be able to contact the team who manages or developed the program.  This can be done through various methods of communication.
+
+  b) Tasks:
+	i) As a user, I can view the contact information of the team along with the name and logo of the team.
+	ii) As a user, I can submit a query, email, or call a representative in the case where I want or need to contact them.
+	iii) As a user, I am given different options of communicating with the team.
+	iv) As a user, I am sent a copy of the query after sending it.
+
+  c) Tests:
+	i) Verify that the user can see the contact information, name of the team, and logo.
+	ii) Verify that the user can successfully contact the team through all ways of communication.
+	iii) Verify that a copy of the query was sent to the user who originally sent it.
+	
+  d) Assignee:
+	i) Alan, implement the front end UI and code behind the logic and operations for the customer to successfully send and the team to receive the query. 
+
+  e) Estimation: 4
+
+  f) Priority: 9
+
+  g) Done:
+	i) The user can view the contact information, name of the team, and the logo.
+	ii) The user can contact through the team by clicking on the contact information and sending a query.
+	iii)The user has received a confirmation that their message has sent and also gets a copy of their query.
+	iv) The team is able to receive the query from the user.
+
+
+
+#7) As a user, I can call for a shape listing report (at any time) (Jake)
+
+a)  Description:
+	A site user can call a shape listing report of any perticular shape and see
+	all of the specific instances of that shape.
+	
+	All items included in shape properties for each shape must be 
+	included in shape report.
+
+b)  Tasks:
+	1. The first task to be completed in this part of the assignment
+	is to search all of the instances of the shape type that is being 
+	search for
+
+	2. Make an array of structs(or linked-lists) that contains the 
+	shapes that where searched for in task#1 and at each shape 
+	includes its property information
+	
+	3. Following the search for the individual shapes, each shape 
+	must have all of its shape properties information inculded in 
+	the shape report.
+
+c)  Tests:
+	1. Verify that a search for each type of shape id work properly
+	(meaning that all cases of that shape are found in the program)
+
+	2. Verify that the array of structs is loaded correctly with 
+	all of the shape information
+	
+	3. Output a shape from each shape type that is in the program.
+	(tests the format for printing shape propteries for each type
+	of shape).
+	
+d)  Assignee:
+	Jake, implement a search for every shape of shape type. For 
+	each shape that is found store it and its property 
+	information on an array of structs.Then to show the list 
+	to the user output it in console.
+	
+e)  Estimation: 4
+
+f)  Priority: 4
+
+g)  Done:
+	User is able to search for any type of shape that they want.
+	The search should include every instance of the shape that 
+	they searched for. Each shape should also have its own set of 
+	shape property information (shape property includes shape 
+	dimensions, pen color, pen width, pen style, pen cap style, 
+	pen join style, brush color, brush shape.) with it. Once this 
+	information is gathered in the search it will be outputted for 
+	the user to be able to see the information that was just collected
+	by the shape listing report.
+
+
+#8) As a user I can view all graphic objects in the rendering window.(Vishal)
+
+a) Description:
+	The user will be able to view the shapes and text in the 1000 pixel 
+	(horizontal) by 500 pixel (vertical) rendering area
+
+b) Tasks:
+	As a user the shapes that I can render cannot excede the boundaries of the rendering area.
+	As a user I will be able to see a shape ID above each shape.
+	As a user I will be able to see the displayed shapes in the rendering area.
+
+c) Tests:
+	Check to see that the shapes do not excede the size of the rendering area.
+	A new shape ID will be created to identify each differnt shape.
+	The shapes information will be taken from another file holding shape data before being displayed in the rendering window.
+
+d) Assignee:
+	Vishal, create check to ensure shapes do not excede rendering area
+	display shape ID above each shape.
+
+e) Estimation: 18
+
+f) Priority 3
+
+g) Done: 
+	The user is able to display a shape within the boundaries of the rendering area
+	along with a coressponding shape ID displayed above the shape.
+	The shape information will be taken from a file holding shape data.
+
+
+#9) As an administrator, I can add and remove all aspects of shapes being rendered.(Peggy)
+
+a)  Description:
+	An administrator would be able to change/add/remove shapes and text that are 	being rendered.
+	All the changes would be visible in the rendering area only. Customers will not be able to see the changes.
+
+b)  Tasks: 	As an administrator, I can add shapes and change their text/font via an add shape form/class. 	As an administrator, I can remove shapes and change their text via a remove shape form/class/template. 	As an administrator, I can view who/what changed in the rendering area/message. As a customer, I cannot see the changes made to the shape form. 
+c)  Tests: 	Verify that an administrator can add shapes and text via add shape form. 	Verify that an administrator can remove shapes and text via remove shape form. Verify that the changes/additions can be seen in the rendering area only. 	Verify that the customers cannot access/view the rendering area. 
+d)  Assignee: 	Peggy, implement front end UI code, implement add/remove shape classes, implement rendering message so administrators know about changes. Make sure customers don’t see the 	rendering area. 
+e)  Estimation: 35 
+f)  Priority: 7 
+g)  Done:
+	Administrator is able to add/remove shapes and text via add and remove shape classes. 
+	Administrators can view what changes were made to the shape and what was added/	removed.
+	Rendering message shows the changes were implemented and done (progress saved message).
+	All task, test conditions satisfied.
+
+
+#10)  As a user I can save all of the changes to canvas.(Reed)
+
+  a) Description:
+        At any point between executions the user can save their changes made.
+        At any point between executions the administrator can save their changes.
+        Application should automatically save changes soon after they are made.
+
+  b) Tasks:
+	As a user i can save my canvas at any point
+	
+  c) Tests:
+	Verify the user has made changes before saving again
+	Verify 
+
+  d) Assignee: 
+	Reed, develops and tests this feature 
+       
+  e) Estimation: 10
+
+  f) Priority: 2
+ 
+  g) Done:
+	User is able to save at any point and be able to load any saved 
+	canvases. User's canvas will automatically save after a certain amount of time.
+	User is able to revert back to a previously saved session.
+
+
