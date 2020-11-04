@@ -6,3 +6,5 @@ You are to create software for modeling basic 2D graphics objects. The modeler w
 
 #### Team Members:
 Ryan, Alan, Sophia, Peggy, Vishal, Jake, Dan, Craig and Reed
+
+Trial Edit -- Alan
