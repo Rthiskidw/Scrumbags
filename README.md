@@ -5,4 +5,4 @@
 You are to create software for modeling basic 2D graphics objects. The modeler will demonstrate the capabilities of 2D Graphics Modeler Inc.’s graphics engine. Potential customers will be looking for a 2D graphics rendering librarywhich can be integrated into their own software suite.
 
 #### Team Members:
-Ryan, Alan, Sophia, Peggy, Vishal, Jake, Dan, and Reed
+Ryan, Alan, Sophia, Peggy, Vishal, Jake, Dan, Craig and Reed
