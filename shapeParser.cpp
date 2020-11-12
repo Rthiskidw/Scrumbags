@@ -64,6 +64,8 @@ void parseShape(vector<Shape*>& vShapeList)
 	while(dataFile)
 	{
 		tempId = stoi(getStringFromFile(dataFile));
+		
+		tempName = getStringFromFile(dataFile);
 
 		dimensionsString = getStringFromFile(dataFile);
 
